@@ -1,122 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang = "ko">
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>주문하기</title>
-	<link rel="stylesheet" href="css/style6.css">
+    <title>사진</title>
+	<!-- 외부 스타일 적용 :현 우선순위2-->
+	<link rel="stylesheet" href="css/style09.css">
+	<!-- 내부 스타일 적용 : 현 우선순위1-->
 	<style></style>
 </head>
 <body>
-	<h1>레드향 주문하기</h1>
-	<div id="container">		
-		<form>
-			<!-- 레드향 주문-수량 -->
-			<fieldset>
-			    <legend>상품 선택</legend>
-			    <!-- 주문할 상품을 선택해 주세요 -->
-			    <p><b>주문할 상품을 선택해 주세요.</b></p>
-			    <!-- 순서가 상관없는 목록 -->
-			    <ul id="product">
-			    	<!-- 선물용 3kg 개 (최대 5개) -->
-			    	<li>
-			    		<label>
-			    		  <input type="checkbox" name="" value="s_3">
-			    		  선물용 3kg
-			    	    </label>
-			    		<input type="number" min="0"max="5" name="">개
-			    		<small>(최대 5개)</small>
-			    	</li>
-			    	<li>
-			    		<label>
-			    		  <input type="checkbox" name="" value="s_3">
-			    		  선물용 5kg
-			    	    </label>
-			    		<input type="number" min="0"max="5" name="">개
-			    		<small>(최대 3개)</small>
-			    	</li>
-			    	<li>
-			    		<label>
-			    		  <input type="checkbox" name="" value="f_3">
-			    		  가정용 3kg
-			    	    </label>
-			    	    <!-- ********* -->
-			    	      <input type="number" min="0"max="5" name="">개
-			    		<small>(최대 5개)</small>
-			    	</li>
-			    	<li>
-			    		<label>
-			    		  <input type="checkbox" name="" value="f_5">
-			    		  가정용 5kg
-			    	    </label>
-			    	      <input type="number" min="0"max="3" name="">개
-			    		<small>(최대 3개)</small>
-			    	</li>
-			    </ul>
-			    <!-- 포장 선택 -->
-			    <p><b>포장 선택</b></p>
-			    <ul>
-			    	<li>
-			    		<label>
-							<input type="radio" name="pack"
-			    		     value="yes">
-			    		선물 포장</label>
-			    	</li>
-			    	<li>
-			    		<label>
-			    		    <input type="radio" name="pack"
-			    		    value="no">
-			    		    선물 포장 안함
-			    		</label>
-			    	</li>
-			    </ul>
+<div id="container">
+        <h1>Like a Diamend</h1>
+        <div class="wrap">
+            <div class="box1">
+                <!-- 사진 -->
+                <div class="pic">
+                    <img src="img/img02.png" alt=""사진>
+                </div>
+                <!-- 슬로건 -->
+				<div>
+					<small>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small><br>
+					<strong>김지혜입니다.!!</strong>
+				</div>
+				<hr>
+				<!-- 비전 -->
+				<div>
+					<p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lor</p>
+					<p>There are many variations of passages of Lorem Ipsum available, but the majority have</p>
+					<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It</p>
+				</div>
+            </div>
+            <div class="box2">
+               	<!-- ABOUT ME -->
+				<div>
+					<h1>ABOUT ME</h1>
+					<div>
+						<strong>홍길동</strong>
+						<p>2000.01.01</p>
+						<p>010-0000-0000</p>
+						<p>서울시 종로구 000</p>
+						<p>abcd@naver.com</p>
+					</div>
+				</div>
 
-			</fieldset>
-			<!-- 배송지 -->
-			<fieldset>
-				<legend>배송 정보</legend>
-				<ul id="shopping">
-					<li>
-						<!-- input의 id하고 label의 for속성 값을 일치 -->
-						<label for="user-name">이름</label>
-						<input id="user-name" type="text" name="">
-					</li>
-					<li>
-						<label for="addr">배송주소</label>
-						<input id="addr"  type="text" name="">
-					</li>
-					<li>
-						<label for="mail">이메일</label>
-						<input id="mail"  type="email" name="">
-					</li>
-					<li>
-						<label for="phone">연락처</label>
-						<input id="phone" type="tel" name="">
-					</li>
-					<li>
-						<label for="d-day">배송지정</label>
-						<input id="d-day" type="date" name="">
-						<small>
-							(주문일로부터 최소 3일 이후)
-						</small>
-					</li>
-					<li>
-						<label for="memo">메모</label>
-						<textarea id="memo" cols="40" rows="4">							
-						</textarea>												
-					</li>
-				</ul>
+                <!-- EDUCATION -->
+				<div>
+					<h1>EDUCATION</h1>
+					<div>
+						<!-- ******** -->
+						<!-- <table border="1"> -->
+						<table>
+							<tbody>
+								<tr><td>2020.05</td><td>oooooo 수료</td></tr>
+								<tr><td>2015.03</td><td>oooooo 수료</td></tr>
+								<tr><td>2010.01</td><td>oooooo 수료</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 
+                <!-- AWARD -->
+				<div>
+					<h1>AWARD</h1>
+					<div>
+						<!-- ******** -->
+						<!-- <table border="1"> -->
+						<table>
+							<tbody>
+								<tr><td>2020.05</td><td>oooooo 수상</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
 
-			</fieldset>
-			  <div>
-				  <!-- 전송 -->
-				  <input value="가입하기" type="submit" name="">
-				  <!-- 취소 -->
-				  <input value="취소" type="reset" type="reset" name="">
-			  </div>
-		</form>
-
-	</div>
+            </div>
+            <div class="box3">
+               				<!-- CAREER -->
+				<div>
+					<h1>CAREER</h1>
+					<div>
+						<table>
+							<tbody>
+								<tr>
+									<td>2020.05 - 2020.10</td>
+									<td>oooooo 사업 계획서 작성</td>
+								</tr>
+								<tr>
+									<td>2019.05 - 2020.04</td>
+									<td>oooooo 회사 소개서 작성</td>
+								</tr>
+								<tr>
+									<td>2018.05 - 2019.04</td>
+									<td>oooooo 사업 계획서 작성</td>
+								</tr>
+								<tr>
+									<td>2017.05 - 2018.04</td>
+									<td>oooooo 회사 소개서 작성</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- CERTIFICATE -->
+				<div>
+					<h1>CERTIFICATE</h1>
+					<div>
+						<table>
+							<tbody>
+								<tr><td>2020.05</td><td>oooooo 1급</td></tr>
+								<tr><td>2015.03</td><td>oooooo 2종 보통</td></tr>
+								<tr><td>2010.01</td><td>oooooo 기사</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- SKILLS -->
+				<div>
+					<h1>AWARD</h1>
+					<div>
+						<!-- ******** -->
+						<!-- <table border="1"> -->
+						<table>
+							<tbody>
+								<tr><td>JAVA1</td><td>99%</td></tr>
+								<tr><td>JAVA2</td><td>89%</td></tr>
+								<tr><td>JAVA3</td><td>79%</td></tr>
+								<tr><td>JAVA4</td><td>69%</td></tr>
+								<tr><td>JAVA5</td><td>59%</td></tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
