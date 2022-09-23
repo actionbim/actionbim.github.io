@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>주문하기</title>
+	<link rel="stylesheet" href="css/style6.css">
+	<style></style>
+</head>
+<body>
+	<h1>레드향 주문하기</h1>
+	<div id="container">		
+		<form>
+			<!-- 레드향 주문-수량 -->
+			<fieldset>
+			    <legend>상품 선택</legend>
+			    <!-- 주문할 상품을 선택해 주세요 -->
+			    <p><b>주문할 상품을 선택해 주세요.</b></p>
+			    <!-- 순서가 상관없는 목록 -->
+			    <ul id="product">
+			    	<!-- 선물용 3kg 개 (최대 5개) -->
+			    	<li>
+			    		<label>
+			    		  <input type="checkbox" name="" value="s_3">
+			    		  선물용 3kg
+			    	    </label>
+			    		<input type="number" min="0"max="5" name="">개
+			    		<small>(최대 5개)</small>
+			    	</li>
+			    	<li>
+			    		<label>
+			    		  <input type="checkbox" name="" value="s_3">
+			    		  선물용 5kg
+			    	    </label>
+			    		<input type="number" min="0"max="5" name="">개
+			    		<small>(최대 3개)</small>
+			    	</li>
+			    	<li>
+			    		<label>
+			    		  <input type="checkbox" name="" value="f_3">
+			    		  가정용 3kg
+			    	    </label>
+			    	    <!-- ********* -->
+			    	      <input type="number" min="0"max="5" name="">개
+			    		<small>(최대 5개)</small>
+			    	</li>
+			    	<li>
+			    		<label>
+			    		  <input type="checkbox" name="" value="f_5">
+			    		  가정용 5kg
+			    	    </label>
+			    	      <input type="number" min="0"max="3" name="">개
+			    		<small>(최대 3개)</small>
+			    	</li>
+			    </ul>
+			    <!-- 포장 선택 -->
+			    <p><b>포장 선택</b></p>
+			    <ul>
+			    	<li>
+			    		<label>
+							<input type="radio" name="pack"
+			    		     value="yes">
+			    		선물 포장</label>
+			    	</li>
+			    	<li>
+			    		<label>
+			    		    <input type="radio" name="pack"
+			    		    value="no">
+			    		    선물 포장 안함
+			    		</label>
+			    	</li>
+			    </ul>
+
+			</fieldset>
+			<!-- 배송지 -->
+			<fieldset>
+				<legend>배송 정보</legend>
+				<ul id="shopping">
+					<li>
+						<!-- input의 id하고 label의 for속성 값을 일치 -->
+						<label for="user-name">이름</label>
+						<input id="user-name" type="text" name="">
+					</li>
+					<li>
+						<label for="addr">배송주소</label>
+						<input id="addr"  type="text" name="">
+					</li>
+					<li>
+						<label for="mail">이메일</label>
+						<input id="mail"  type="email" name="">
+					</li>
+					<li>
+						<label for="phone">연락처</label>
+						<input id="phone" type="tel" name="">
+					</li>
+					<li>
+						<label for="d-day">배송지정</label>
+						<input id="d-day" type="date" name="">
+						<small>
+							(주문일로부터 최소 3일 이후)
+						</small>
+					</li>
+					<li>
+						<label for="memo">메모</label>
+						<textarea id="memo" cols="40" rows="4">							
+						</textarea>												
+					</li>
+				</ul>
+
+
+			</fieldset>
+			  <div>
+				  <!-- 전송 -->
+				  <input value="가입하기" type="submit" name="">
+				  <!-- 취소 -->
+				  <input value="취소" type="reset" type="reset" name="">
+			  </div>
+		</form>
+
+	</div>
+</body>
+</html>
